@@ -8,9 +8,4 @@ const assertEqual = function(actual, expected) {
   // return;
 };
 
-// TEST CODE
-assertEqual("Lighthouse Labs", "Bootcamp");
-assertEqual(1, 1);
-
-
-// testing for git commit
+module.exports = assertEqual;
