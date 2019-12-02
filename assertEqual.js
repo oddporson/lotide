@@ -8,4 +8,7 @@ const assertEqual = function(actual, expected) {
   // return;
 };
 
+// This test code below have been moved over to assertEqualTest.js
+// assertEqual("Lighthouse Labs", "Bootcamp");
+// assertEqual(1, 1);
 module.exports = assertEqual;
