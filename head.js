@@ -6,10 +6,10 @@ const assertEqual = function(actual, expected) {
   }
 };
 
-const head = function (arr) {
-  let firstItem = arr[0]
+const head = function(arr) {
+  let firstItem = arr[0];
   return firstItem;
-}
+};
 
 
 
