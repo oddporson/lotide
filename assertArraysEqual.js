@@ -11,14 +11,14 @@ const eqArrays = function (arr1, arr2) {
   }
 }
 
-
-const assertArraysEqual = function(arr1, arr2, expected) {
-  if (eqArrays(arr1, arr2) === expected) {
-    console.log(`✅✅✅Assertion Passed: ${arr1} === ${arr2}`);
+const assertArraysEqual = function(actual, expected) {
+  if (JSON.stringify(actual) === JSON.stringify(expected)) {
+    console.log(`✅✅✅ Assertion Passed: "${actual}" === "${expected}"`);
   } else {
-    console.log(`❌❌❌Assertion Failed: ${arr1} !== ${arr2}`);
+    console.log(`❌❌❌ Assertion Failed: "${actual}" !== "${expected}"`);
   }
 };
+
 
 assertArraysEqual([1, 2, 3], [1, 2, 3], true);
 assertArraysEqual([1, 2, 3], [3, 2, 1], false);
