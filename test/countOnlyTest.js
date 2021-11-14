@@ -1,5 +1,5 @@
-const _ = require('../index')
 const assert = require('chai').assert
+const _ = require('../index')
 
 describe("#countOnly", () => {
   const firstNames = [
