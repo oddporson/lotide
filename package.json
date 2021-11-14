@@ -1,0 +1,27 @@
+{
+  "name": "@oddporson/lotide",
+  "version": "1.0.0",
+  "description": "https://docs.npmjs.com/files/package.json#description-1",
+  "main": "assertArraysEqual.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oddporson/lotide.git"
+  },
+  "keywords": [],
+  "author": "https://docs.npmjs.com/files/package.json#people-fields-author-contributors",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/oddporson/lotide/issues"
+  },
+  "homepage": "https://github.com/oddporson/lotide#readme",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^6.2.2"
+  }
+}
