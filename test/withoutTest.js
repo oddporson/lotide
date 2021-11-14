@@ -1,13 +1,14 @@
-const without = require('../without')
-const assertArraysEqual = require('../assertArraysEqual')
-// TEST CODES
+const assert = require('chai').assert
+const _ = require("../index")
 
-console.log(without([1, 2, 3], [1])); // => [2, 3]
-console.log(without(["1", "2", "3"], [1, 2, "3"])); // => ["1", "2"]
-
-const words = ["hello", "world", "lighthouse"];
-console.log("before without function occured", words);
-console.log(without(words, ["lighthouse"])); // no need to capture return value for this test case
-// Make sure the original array was not altered by the without function
-console.log("after without function occured", words); // original array should not have been altered
-assertArraysEqual(words, ["hello", "world", "lighthouse"]);
+describe("#without", () => {
+  it("should return [ '1', '2' ] when passed ['1', '2', '3'] and the values not to include: [1, 2, '3']", () => {
+    assert.deepEqual(_.without(["1", "2", "3"], [1, 2, "3"]), ["1", "2"]);
+  });
+  it("should return [ 2, 3 ] when passed [1, 2, 3] and the value not to include: [1]", () => {
+    assert.deepEqual(_.without([1, 2, 3], [1]), [ 2, 3 ]);
+  });
+  it("should return [ 'hello', 'world' ] when passed ['hello', 'world', 'lighthouse'] and the value not to include: ['lighthouse']", () => {
+    assert.deepEqual(_.without(["hello", "world", "lighthouse"], ["lighthouse"]), [ "hello", "world" ]);
+  });
+});

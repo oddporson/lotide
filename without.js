@@ -1,5 +1,3 @@
-// const assertArraysEqual = require('./assertArraysEqual')
-
 const without = function (source, itemsToRemove) {
   let arr = [];
   source.forEach((element) => {
