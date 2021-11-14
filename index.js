@@ -9,6 +9,7 @@ const assertArraysEqual   = require('./assertArraysEqual');
 const countOnly           = require('./countOnly');
 const letterPositions     = require('./letterPositions');
 const without             = require('./without');
+const findKeyByValue      = require('./findKeyByValue')
 
 module.exports = {
   head,
@@ -20,5 +21,6 @@ module.exports = {
   assertArraysEqual,
   countOnly,
   letterPositions,
-  without
+  without,
+  findKeyByValue,
 };
