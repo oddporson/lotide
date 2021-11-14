@@ -8,5 +8,3 @@ const countLetters = function(string) {
 };
 
 module.exports = countLetters
-
-// test
