@@ -12,6 +12,7 @@ const without             = require('./without');
 const findKey             = require('./findKey');
 const findKeyByValue      = require('./findKeyByValue');
 const eqObjects           = require('./eqObjects');
+const takeUntil           = require('./takeUntil');
 
 module.exports = {
   head,
@@ -27,4 +28,5 @@ module.exports = {
   findKey,
   findKeyByValue,
   eqObjects,
+  takeUntil,
 };
