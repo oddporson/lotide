@@ -11,6 +11,7 @@ const letterPositions     = require('./letterPositions');
 const without             = require('./without');
 const findKey             = require('./findKey');
 const findKeyByValue      = require('./findKeyByValue');
+const eqObjects           = require('./eqObjects');
 
 module.exports = {
   head,
@@ -25,4 +26,5 @@ module.exports = {
   without,
   findKey,
   findKeyByValue,
+  eqObjects,
 };
