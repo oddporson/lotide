@@ -13,6 +13,7 @@ const findKey             = require('./findKey');
 const findKeyByValue      = require('./findKeyByValue');
 const eqObjects           = require('./eqObjects');
 const takeUntil           = require('./takeUntil');
+const flatten             = require('./flatten');
 
 module.exports = {
   head,
@@ -29,4 +30,5 @@ module.exports = {
   findKeyByValue,
   eqObjects,
   takeUntil,
+  flatten,
 };
