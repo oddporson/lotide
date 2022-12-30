@@ -22,7 +22,7 @@
   "homepage": "https://github.com/oddporson/lotide#readme",
   "devDependencies": {
     "chai": "^4.2.0",
-    "mocha": "^6.2.3"
+    "mocha": "^10.2.0"
   },
   "dependencies": {
     "ansi-regex": "^6.0.1"
